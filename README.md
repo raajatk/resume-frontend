@@ -1,295 +1,74 @@
-# `angular-seed` — the seed for AngularJS apps
+# [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/)
 
-This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it
-to quickly bootstrap your angular webapp projects and dev environment for these projects.
+[Resume](https://startbootstrap.com/template-overviews/resume/) is a resume and CV theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
 
-The seed contains a sample AngularJS application and is preconfigured to install the Angular
-framework and a bunch of development and testing tools for instant web development gratification.
+## Preview
 
-The seed app doesn't do much, just shows how to wire two controllers and views together.
+[![Resume Preview](https://startbootstrap.com/assets/img/templates/resume.jpg)](https://blackrockdigital.github.io/startbootstrap-resume/)
 
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-resume/)**
 
-## Getting Started
+## Status
 
-To get you started you can simply clone the `angular-seed` repository and install the dependencies:
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-resume/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-resume.svg)](https://www.npmjs.com/package/startbootstrap-resume)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-resume.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-resume)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-resume/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-resume)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-resume/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-resume?type=dev)
 
-### Prerequisites
+## Download and Installation
 
-You need git to clone the `angular-seed` repository. You can get git from [here][git].
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/resume/)
+* Install via npm: `npm i startbootstrap-resume`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-resume.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-resume)
 
-We also use a number of Node.js tools to initialize and test `angular-seed`. You must have Node.js
-and its package manager (npm) installed. You can get them from [here][node].
+## Usage
 
-### Clone `angular-seed`
+### Basic Usage
 
-Clone the `angular-seed` repository using git:
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-```
-git clone https://github.com/angular/angular-seed.git
-cd angular-seed
-```
+### Advanced Usage
 
-If you just want to start a new project without the `angular-seed` commit history then you can do:
+After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-```
-git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>
-```
+#### Gulp Tasks
 
-The `depth=1` tells git to only pull down one commit worth of historical data.
+- `gulp` the default task that builds everything
+- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
+- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
+- `gulp js` minifies the themes JS file
+- `gulp vendor` copies dependencies from node_modules to the vendor directory
 
-### Install Dependencies
+You must have npm and Gulp installed globally on your machine in order to use these features.
 
-We have two kinds of dependencies in this project: tools and Angular framework code. The tools help
-us manage and test the application.
+## Troubleshooting and Help
 
-* We get the tools we depend upon via `npm`, the [Node package manager][npm].
-* We get the Angular code via `bower`, a [client-side code package manager][bower].
-* In order to run the end-to-end tests, you will also need to have the
-  [Java Development Kit (JDK)][jdk] installed on your machine. Check out the section on
-  [end-to-end testing](#e2e-testing) for more info.
+Start Bootstrap has a public Slack channel which is a great place to ask questions about this template and all things related to Start Bootstrap.
 
-We have preconfigured `npm` to automatically run `bower` so we can simply do:
+**[Click here to join the Slack channel!](https://startbootstrap-slack.herokuapp.com/)**
 
-```
-npm install
-```
+## Bugs and Issues
 
-Behind the scenes this will also call `bower install`. After that, you should find out that you have
-two new folders in your project.
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-resume/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/resume/).
 
-* `node_modules` - contains the npm packages for the tools we need
-* `app/bower_components` - contains the Angular framework files
+## About
 
-*Note that the `bower_components` folder would normally be installed in the root folder but
-`angular-seed` changes this location through the `.bowerrc` file. Putting it in the `app` folder
-makes it easier to serve the files by a web server.*
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-### Run the Application
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
 
-We have preconfigured the project with a simple development web server. The simplest way to start
-this server is:
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-```
-npm start
-```
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-Now browse to the app at [`localhost:8000/index.html`][local-app-url].
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
+## Copyright and License
 
-## Directory Layout
-
-```
-app/                    --> all of the source files for the application
-  app.css               --> default stylesheet
-  components/           --> all app specific modules
-    version/              --> version related components
-      version.js                 --> version module declaration and basic "version" value service
-      version_test.js            --> "version" value service tests
-      version-directive.js       --> custom directive that returns the current app version
-      version-directive_test.js  --> version directive tests
-      interpolate-filter.js      --> custom interpolation filter
-      interpolate-filter_test.js --> interpolate filter tests
-  view1/                --> the view1 view template and logic
-    view1.html            --> the partial template
-    view1.js              --> the controller logic
-    view1_test.js         --> tests of the controller
-  view2/                --> the view2 view template and logic
-    view2.html            --> the partial template
-    view2.js              --> the controller logic
-    view2_test.js         --> tests of the controller
-  app.js                --> main application module
-  index.html            --> app layout file (the main html template file of the app)
-  index-async.html      --> just like index.html, but loads js files asynchronously
-karma.conf.js         --> config file for running unit tests with Karma
-e2e-tests/            --> end-to-end tests
-  protractor-conf.js    --> Protractor config file
-  scenarios.js          --> end-to-end scenarios to be run by Protractor
-```
-
-
-## Testing
-
-There are two kinds of tests in the `angular-seed` application: Unit tests and end-to-end tests.
-
-### Running Unit Tests
-
-The `angular-seed` app comes preconfigured with unit tests. These are written in [Jasmine][jasmine],
-which we run with the [Karma][karma] test runner. We provide a Karma configuration file to run them.
-
-* The configuration is found at `karma.conf.js`.
-* The unit tests are found next to the code they are testing and have an `_test.js` suffix (e.g.
-  `view1_test.js`).
-
-The easiest way to run the unit tests is to use the supplied npm script:
-
-```
-npm test
-```
-
-This script will start the Karma test runner to execute the unit tests. Moreover, Karma will start
-watching the source and test files for changes and then re-run the tests whenever any of them
-changes.
-This is the recommended strategy; if your unit tests are being run every time you save a file then
-you receive instant feedback on any changes that break the expected code functionality.
-
-You can also ask Karma to do a single run of the tests and then exit. This is useful if you want to
-check that a particular version of the code is operating as expected. The project contains a
-predefined script to do this:
-
-```
-npm run test-single-run
-```
-
-
-<a name="e2e-testing"></a>
-### Running End-to-End Tests
-
-The `angular-seed` app comes with end-to-end tests, again written in [Jasmine][jasmine]. These tests
-are run with the [Protractor][protractor] End-to-End test runner. It uses native events and has
-special features for Angular applications.
-
-* The configuration is found at `e2e-tests/protractor-conf.js`.
-* The end-to-end tests are found in `e2e-tests/scenarios.js`.
-
-Protractor simulates interaction with our web app and verifies that the application responds
-correctly. Therefore, our web server needs to be serving up the application, so that Protractor can
-interact with it.
-
-**Before starting Protractor, open a separate terminal window and run:**
-
-```
-npm start
-```
-
-In addition, since Protractor is built upon WebDriver, we need to ensure that it is installed and
-up-to-date. The `angular-seed` project is configured to do this automatically before running the
-end-to-end tests, so you don't need to worry about it. If you want to manually update the WebDriver,
-you can run:
-
-```
-npm run update-webdriver
-```
-
-Once you have ensured that the development web server hosting our application is up and running, you
-can run the end-to-end tests using the supplied npm script:
-
-```
-npm run protractor
-```
-
-This script will execute the end-to-end tests against the application being hosted on the
-development server.
-
-**Note:**
-Under the hood, Protractor uses the [Selenium Standalone Server][selenium], which in turn requires
-the [Java Development Kit (JDK)][jdk] to be installed on your local machine. Check this by running
-`java -version` from the command line.
-
-If JDK is not already installed, you can download it [here][jdk-download].
-
-
-## Updating Angular
-
-Since the Angular framework library code and tools are acquired through package managers (npm and
-bower) you can use these tools to easily update the dependencies. Simply run the preconfigured
-script:
-
-```
-npm run update-deps
-```
-
-This will call `npm update` and `bower update`, which in turn will find and install the latest
-versions that match the version ranges specified in the `package.json` and `bower.json` files
-respectively.
-
-
-## Loading Angular Asynchronously
-
-The `angular-seed` project supports loading the framework and application scripts asynchronously.
-The special `index-async.html` is designed to support this style of loading. For it to work you must
-inject a piece of Angular JavaScript into the HTML page. The project has a predefined script to help
-do this:
-
-```
-npm run update-index-async
-```
-
-This will copy the contents of the `angular-loader.js` library file into the `index-async.html`
-page. You can run this every time you update the version of Angular that you are using.
-
-
-## Serving the Application Files
-
-While Angular is client-side-only technology and it is possible to create Angular web apps that
-do not require a backend server at all, we recommend serving the project files using a local
-web server during development to avoid issues with security restrictions (sandbox) in browsers. The
-sandbox implementation varies between browsers, but quite often prevents things like cookies, XHR,
-etc to function properly when an HTML page is opened via the `file://` scheme instead of `http://`.
-
-### Running the App during Development
-
-The `angular-seed` project comes preconfigured with a local development web server. It is a Node.js
-tool called [http-server][http-server]. You can start this web server with `npm start`, but you may
-choose to install the tool globally:
-
-```
-sudo npm install -g http-server
-```
-
-Then you can start your own development web server to serve static files from a folder by running:
-
-```
-http-server -a localhost -p 8000
-```
-
-Alternatively, you can choose to configure your own web server, such as Apache or Nginx. Just
-configure your server to serve the files under the `app/` directory.
-
-### Running the App in Production
-
-This really depends on how complex your app is and the overall infrastructure of your system, but
-the general rule is that all you need in production are the files under the `app/` directory.
-Everything else should be omitted.
-
-Angular apps are really just a bunch of static HTML, CSS and JavaScript files that need to be hosted
-somewhere they can be accessed by browsers.
-
-If your Angular app is talking to the backend server via XHR or other means, you need to figure out
-what is the best way to host the static files to comply with the same origin policy if applicable.
-Usually this is done by hosting the files by the backend server or through reverse-proxying the
-backend server(s) and web server(s).
-
-
-## Continuous Integration
-
-### Travis CI
-
-[Travis CI][travis] is a continuous integration service, which can monitor GitHub for new commits to
-your repository and execute scripts such as building the app or running tests. The `angular-seed`
-project contains a Travis configuration file, `.travis.yml`, which will cause Travis to run your
-tests when you push to GitHub.
-
-You will need to enable the integration between Travis and GitHub. See the
-[Travis website][travis-docs] for instructions on how to do this.
-
-
-## Contact
-
-For more information on AngularJS please check out [angularjs.org][angularjs].
-
-
-[angularjs]: https://angularjs.org/
-[bower]: http://bower.io/
-[git]: https://git-scm.com/
-[http-server]: https://github.com/indexzero/http-server
-[jasmine]: https://jasmine.github.io/
-[jdk]: https://wikipedia.org/wiki/Java_Development_Kit
-[jdk-download]: http://www.oracle.com/technetwork/java/javase/downloads
-[karma]: https://karma-runner.github.io/
-[local-app-url]: http://localhost:8000/index.html
-[node]: https://nodejs.org/
-[npm]: https://www.npmjs.org/
-[protractor]: http://www.protractortest.org/
-[selenium]: http://docs.seleniumhq.org/
-[travis]: https://travis-ci.org/
-[travis-docs]: https://docs.travis-ci.com/user/getting-started
+Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
