@@ -39,6 +39,20 @@ h2 {
   font-size: 1.35rem;
 }
 
+.project {
+  text-transform: lowercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
+  font-size: 1.35rem;
+}
+
+.email {
+  text-transform: lowercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
+  font-size: 1.40rem;
+}
+
 .list-social-icons a {
   color: #495057;
 }

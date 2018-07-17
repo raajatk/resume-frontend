@@ -40,6 +40,20 @@ h2 {
   font-size: 1.35rem;
 }
 
+.project {
+  text-transform: lowercase;
+  font-weight: 500;
+  @include heading-font;
+  font-size: 1.35rem;
+}
+
+.email {
+  text-transform: lowercase;
+  font-weight: 500;
+  @include heading-font;
+  font-size: 1.40rem;
+}
+
 .list-social-icons {
   a {
     color: $gray-700;
